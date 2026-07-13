@@ -210,20 +210,20 @@ ai-frontend-spec
 ├── CONTRIBUTING.md
 │
 ├── docs
-│   ├── 00-introduction.md
-│   ├── 01-role.md
-│   ├── 02-principles.md
-│   ├── 03-context-awareness.md
-│   ├── 04-decision-rules.md
-│   ├── 05-workflow.md
-│   ├── 06-coding-rules.md
-│   ├── 07-page-rules.md
-│   ├── 08-component-rules.md
-│   ├── 09-api-rules.md
-│   ├── 10-style-rules.md
-│   ├── 11-quality-rules.md
-│   ├── 12-self-review.md
-│   ├── 13-prompt-library.md
+│   ├── 00-project-baseline.md
+│   ├── 01-introduction.md
+│   ├── 02-role.md
+│   ├── 03-principles.md
+│   ├── 04-context-awareness.md
+│   ├── 05-decision-rules.md
+│   ├── 06-workflow.md
+│   ├── 07-coding-rules.md
+│   ├── 08-page-rules.md
+│   ├── 09-component-rules.md
+│   ├── 10-api-rules.md
+│   ├── 11-style-rules.md
+│   ├── 12-quality-rules.md
+│   ├── 13-self-review.md
 │   ├── 14-output-rules.md
 │   └── 15-forbidden-rules.md
 │
