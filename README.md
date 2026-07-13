@@ -1,157 +1,519 @@
 # AI Frontend Engineering Specification (AFES)
 
-> 一套适用于 Vue3 + Element Plus + RuoYi-Vue3 的 AI 前端编码规范
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-0.1.0-green.svg)](CHANGELOG.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)
-
-## 项目介绍
-
-AFES（AI Frontend Engineering Specification）是一套专门为 AI 辅助编码场景设计的前端工程规范。它定义了 AI 在 Vue3 + Element Plus + RuoYi-Vue3 技术栈下的角色定位、工作原则、编码规则和输出标准，确保 AI 生成的代码具有一致性、可维护性和生产级质量。
-
-本项目不是一套通用的前端规范，而是一套 **AI 专用** 的编码协议——它告诉 AI "你是谁"、"你该怎么做"、"你不能做什么"。
-
-## 项目目标
-
-- 建立 AI 在前端编码场景中的标准工作流程
-- 定义 AI 的角色边界与决策规则
-- 提供 Vue3 + Element Plus + RuoYi-Vue3 的完整编码规则
-- 确保 AI 生成代码的一致性、可读性和可维护性
-- 减少人工审查成本，提升协作效率
-
-## 项目结构
-
-```
-.
-├── README.md                # 项目说明
-├── LICENSE                  # MIT 许可证
-├── CHANGELOG.md             # 版本变更记录
-├── CONTRIBUTING.md          # 贡献指南
-├── .gitignore               # Git 忽略配置
-│
-├── docs/                    # 核心规范文档
-│   ├── 00-introduction.md       # 规范介绍
-│   ├── 01-role.md               # AI 角色定义
-│   ├── 02-principles.md         # AI 工作原则
-│   ├── 03-context-awareness.md  # 上下文感知
-│   ├── 04-decision-rules.md     # 决策规则
-│   ├── 05-workflow.md           # 工作流程
-│   ├── 06-coding-rules.md       # 编码规则
-│   ├── 07-page-rules.md         # 页面规则
-│   ├── 08-component-rules.md    # 组件规则
-│   ├── 09-api-rules.md          # API 规则
-│   ├── 10-style-rules.md        # 样式规则
-│   ├── 11-quality-rules.md      # 质量规则
-│   ├── 12-self-review.md        # 自检清单
-│   ├── 13-prompt-library.md     # Prompt 模板库
-│   ├── 14-output-rules.md       # 输出规则
-│   └── 15-forbidden-rules.md    # 禁止规则
-│
-├── templates/               # 代码模板
-│   ├── pages/                   # 页面模板
-│   └── components/              # 组件模板
-│
-├── prompts/                 # Prompt 工程
-├── examples/                # 示例代码
-├── checklists/              # 检查清单
-├── knowledge/               # 知识库
-├── references/              # 参考资料
-└── assets/                  # 静态资源
-```
-
-## Roadmap
-
-### v0.1.0 — 基础框架（当前）
-
-- [x] 项目初始化
-- [x] 核心规范文档（16 章）
-- [ ] 基础页面模板
-- [ ] 基础组件模板
-
-### v0.2.0 — 模板与示例
-
-- [ ] 完整页面模板集（CRUD、表单、详情、仪表盘）
-- [ ] 完整组件模板集（表格、表单、弹窗、图表）
-- [ ] Prompt 模板库
-- [ ] 典型场景示例
-
-### v0.3.0 — 工具链集成
-
-- [ ] ESLint + Prettier 配置
-- [ ] VSCode 配置建议
-- [ ] AI 工具（Cursor / Copilot）配置集成
-- [ ] 自动化检查脚本
-
-### v1.0.0 — 正式发布
-
-- [ ] 完整文档站
-- [ ] 社区贡献机制
-- [ ] 多技术栈扩展（React 等）
-
-## 如何使用
-
-### 作为 AI 的系统提示
-
-将 `docs/` 目录下的规范文档作为 AI 工具的上下文或系统提示使用：
-
-```
-请先阅读以下规范文档，然后按照规范要求完成开发任务：
-
-- docs/01-role.md
-- docs/02-principles.md
-- docs/06-coding-rules.md
-- ...
-```
-
-### 作为团队规范
-
-将本项目作为团队 AI 编码规范的参考标准，统一团队成员使用 AI 辅助编码的方式。
-
-### 作为 Prompt 工程基础
-
-参考 `prompts/` 目录下的模板，快速构建适用于不同场景的 Prompt。
-
-## 目录介绍
-
-| 目录 | 说明 |
-|------|------|
-| `docs/` | 核心规范文档，共 16 章，定义 AI 的角色、原则、流程和规则 |
-| `templates/` | Vue3 + Element Plus 代码模板，开箱即用 |
-| `prompts/` | 针对不同场景的 Prompt 模板 |
-| `examples/` | 符合规范的示例代码 |
-| `checklists/` | 开发、审查、部署各阶段的检查清单 |
-| `knowledge/` | 技术知识库，包含 Vue3、Element Plus、RuoYi-Vue3 的最佳实践 |
-| `references/` | 参考资料与外部链接 |
-| `assets/` | 静态资源（图片、图标等） |
-
-## 版本规划
-
-| 版本 | 状态 | 说明 |
-|------|------|------|
-| v0.1.0 | 开发中 | 基础框架，核心规范文档 |
-| v0.2.0 | 规划中 | 模板与示例完善 |
-| v0.3.0 | 规划中 | 工具链集成 |
-| v1.0.0 | 远期 | 正式发布，社区化运营 |
-
-## 贡献方式
-
-欢迎贡献！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解详细流程。
-
-快速开始：
-
-1. Fork 本仓库
-2. 创建你的分支 (`git checkout -b feature/amazing-feature`)
-3. 提交你的修改 (`git commit -m 'Add amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 创建 Pull Request
-
-## License 说明
-
-本项目采用 [MIT License](LICENSE) 开源许可证。
-
-MIT License 是最宽松的开源许可证之一，允许你自由使用、修改、分发本项目的代码，仅需保留原始版权声明和许可证声明。
+> 一套面向 AI Coding 的企业级前端工程规范体系  
+> 帮助 AI 理解项目、遵循规范、复用组件、生成高质量代码
 
 ---
 
-<p align="center">Built with ❤️ for AI-assisted frontend development</p>
+## 项目简介
+
+AFES（AI Frontend Engineering Specification）是一套专门为 AI 编码工具设计的前端工程规范体系。
+
+它不是传统意义上的开发规范文档，也不是简单的 Prompt 集合。
+
+AFES 的核心目标是：
+
+> 让 AI 像团队成员一样理解项目，并按照统一工程规范完成开发任务。
+
+AFES 将企业前端项目中的工程规则、目录结构、组件体系、页面模板、开发流程、代码规范和 Review 机制进行标准化沉淀，使 Claude Code、Cursor、GitHub Copilot、Trae 等 AI 工具能够持续生成符合团队要求的代码。
+
+---
+
+## 为什么要做 AFES
+
+随着 AI Coding 的普及，团队正在面临新的问题：
+
+### AI 不理解项目
+
+AI 可以写代码。
+
+但是不知道：
+
+- 项目目录结构
+- 公共组件体系
+- 权限机制
+- 接口规范
+- 页面规范
+
+导致生成代码质量不稳定。
+
+---
+
+### AI 不理解团队规范
+
+同一个需求：
+
+今天生成 A 风格。
+
+明天生成 B 风格。
+
+代码风格不统一。
+
+维护成本越来越高。
+
+---
+
+### AI 不会优先复用
+
+项目已经有：
+
+- Upload
+- DataTable
+- SearchForm
+- DialogForm
+
+AI 仍然可能重新实现一套。
+
+导致组件重复建设。
+
+---
+
+### AI 不具备工程思维
+
+AI 能完成单个功能。
+
+但往往不会：
+
+- 分析上下文
+- 评估影响范围
+- 优先复用已有能力
+- 自检输出质量
+
+AFES 的目标就是解决这些问题。
+
+---
+
+## 项目目标
+
+AFES 致力于构建：
+
+### 统一的 AI 开发规范
+
+规范 AI 的开发行为。
+
+---
+
+### 统一的页面模板
+
+让 AI 生成页面时遵循固定结构。
+
+---
+
+### 统一的组件模板
+
+让 AI 优先复用已有组件能力。
+
+---
+
+### 统一的 Prompt 体系
+
+降低 Prompt 编写成本。
+
+---
+
+### 统一的 Review 机制
+
+确保 AI 输出质量可控。
+
+---
+
+## 适用范围
+
+当前版本主要适用于：
+
+### 技术栈
+
+```text
+Vue3
+Vite
+Element Plus
+Pinia
+Vue Router
+Axios
+SCSS
+```
+
+### 项目类型
+
+```text
+企业后台管理系统
+运营管理平台
+中后台系统
+数据管理平台
+```
+
+### 推荐框架
+
+```text
+RuoYi-Vue3
+vue-element-admin
+其他 Vue3 后台项目
+```
+
+---
+
+## 核心设计理念
+
+AFES 不直接约束开发人员。
+
+AFES 主要约束：
+
+```text
+Claude Code
+Cursor
+GitHub Copilot
+Trae
+Cline
+Roo Code
+```
+
+即：
+
+> AFES 是写给 AI 的工程规范。
+
+---
+
+## AFES 架构
+
+```text
+                    AFES
+
+                      │
+
+ ┌──────────┬──────────┬──────────┬──────────┐
+
+ Docs     Templates  Knowledge  Prompts
+
+                      │
+
+                 Checklist
+
+                      │
+
+                   Examples
+
+                      │
+
+           Claude / Cursor / Copilot
+```
+
+---
+
+## 仓库结构
+
+```text
+ai-frontend-spec
+│
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+│
+├── docs
+│   ├── 00-introduction.md
+│   ├── 01-role.md
+│   ├── 02-principles.md
+│   ├── 03-context-awareness.md
+│   ├── 04-decision-rules.md
+│   ├── 05-workflow.md
+│   ├── 06-coding-rules.md
+│   ├── 07-page-rules.md
+│   ├── 08-component-rules.md
+│   ├── 09-api-rules.md
+│   ├── 10-style-rules.md
+│   ├── 11-quality-rules.md
+│   ├── 12-self-review.md
+│   ├── 13-prompt-library.md
+│   ├── 14-output-rules.md
+│   └── 15-forbidden-rules.md
+│
+├── templates
+│   ├── pages
+│   └── components
+│
+├── prompts
+│
+├── knowledge
+│
+├── examples
+│
+├── checklists
+│
+├── references
+│
+└── assets
+```
+
+---
+
+## 文档体系
+
+AFES 采用分层设计。
+
+### Docs
+
+定义：
+
+AI 应该遵守什么。
+
+例如：
+
+- 工作原则
+- 开发流程
+- 页面规范
+- API规范
+
+---
+
+### Templates
+
+定义：
+
+AI 应该生成什么。
+
+例如：
+
+- 列表页模板
+- 表单页模板
+- Upload模板
+- Table模板
+
+---
+
+### Knowledge
+
+定义：
+
+AI 应该了解什么。
+
+例如：
+
+- RuoYi-Vue3
+- Vue3
+- Element Plus
+- Permission
+- Request
+
+---
+
+### Prompts
+
+定义：
+
+如何驱动 AI。
+
+例如：
+
+- 创建页面
+- 创建组件
+- 重构代码
+- 修复 Bug
+
+---
+
+### Checklist
+
+定义：
+
+如何验证输出结果。
+
+例如：
+
+- 页面检查
+- 组件检查
+- 发布检查
+
+---
+
+## 开发路线图（Roadmap）
+
+### v0.1
+
+项目初始化
+
+- 仓库结构
+- README
+- CHANGELOG
+- 文档框架
+
+---
+
+### v0.2
+
+AI 工程规范
+
+- Role
+- Principles
+- Workflow
+- Context
+- Decision
+
+---
+
+### v0.3
+
+工程规则
+
+- Coding Rules
+- API Rules
+- Style Rules
+- Quality Rules
+
+---
+
+### v0.4
+
+模板体系
+
+- Page Template
+- Component Template
+
+---
+
+### v0.5
+
+Prompt Library
+
+- Create
+- Review
+- Refactor
+- Bug Fix
+
+---
+
+### v1.0
+
+正式发布
+
+包含：
+
+- 15个规范章节
+- 2个页面模板
+- 5个组件模板
+- Prompt库
+- Checklist
+- 示例工程
+
+---
+
+## 与 AI 工具协作
+
+AFES 设计目标：
+
+一次编写。
+
+多工具适配。
+
+### Claude Code
+
+通过：
+
+```text
+AGENTS.md
+```
+
+加载规范。
+
+---
+
+### Cursor
+
+通过：
+
+```text
+.cursor/rules
+```
+
+加载规范。
+
+---
+
+### GitHub Copilot
+
+通过：
+
+```text
+copilot-instructions.md
+```
+
+加载规范。
+
+---
+
+### Trae
+
+通过项目规则加载规范。
+
+---
+
+## 当前状态
+
+项目状态：
+
+```text
+Version: v0.1
+Status : Developing
+```
+
+当前正在建设：
+
+- 基础规范体系
+- 页面模板
+- 组件模板
+- Prompt体系
+
+---
+
+## 如何贡献
+
+欢迎贡献：
+
+### 规范
+
+新增工程规则。
+
+---
+
+### 模板
+
+新增页面模板和组件模板。
+
+---
+
+### Prompt
+
+新增 AI 使用场景。
+
+---
+
+### 示例
+
+提供优秀实践案例。
+
+---
+
+详细说明请查看：
+
+```text
+CONTRIBUTING.md
+```
+
+---
+
+## License
+
+本项目采用 MIT License。
+
+可自由学习、使用和修改。
+
+---
+
+## 愿景
+
+AFES 希望成为：
+
+> Vue3 企业后台领域的 AI Frontend Engineering Standard。
+
+让 AI 不只是写代码。
+
+而是真正参与工程开发。
