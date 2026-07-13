@@ -217,7 +217,16 @@ ai-frontend-spec
 │   ├── 04-context-awareness.md
 │   ├── 05-decision-rules.md
 │   ├── 06-workflow.md
-│   ├── 07-coding-rules.md
+│   ├── 07-coding-rules/
+│   │   ├── README.md
+│   │   ├── 01-vue3.md
+│   │   ├── 02-project-structure.md
+│   │   ├── 03-api.md
+│   │   ├── 04-page.md
+│   │   ├── 05-component.md
+│   │   ├── 06-state.md
+│   │   ├── 07-style.md
+│   │   └── 08-quality.md
 │   ├── 08-page-rules.md
 │   ├── 09-component-rules.md
 │   ├── 10-api-rules.md
