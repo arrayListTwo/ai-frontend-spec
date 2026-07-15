@@ -6,11 +6,11 @@
 
 | 模板 | 说明 |
 |------|------|
-| form-dialog/ | 弹窗表单组件 |
-| search-panel/ | 搜索面板组件 |
-| table-toolbar/ | 表格工具栏组件 |
-| upload-dialog/ | 上传弹窗组件 |
-| tree-select-dialog/ | 树形选择弹窗组件 |
+| search-form/ | 搜索表单组件 |
+| data-table/ | 数据表格组件 |
+| edit-dialog/ | 编辑弹窗组件 |
+| form-section/ | 表单分区组件 |
+| upload-panel/ | 上传面板组件 |
 
 ## 使用方式
 
