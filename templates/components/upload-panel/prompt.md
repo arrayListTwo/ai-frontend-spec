@@ -1,3 +1,0 @@
-# Upload Panel Prompt
-
-TODO
