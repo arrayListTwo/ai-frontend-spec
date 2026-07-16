@@ -1,8 +1,8 @@
-# AFES UploadFile Template
+# AFES UploadPanel Template
 
 ## 简介
 
-UploadFile 是 AFES 提供的标准文件上传组件模板。
+UploadPanel 是 AFES 提供的标准文件上传组件模板。
 
 该模板用于企业后台系统中常见的文件处理场景：
 
@@ -28,7 +28,7 @@ UploadFile 是 AFES 提供的标准文件上传组件模板。
 
 # 设计目标
 
-UploadFile 需要满足：
+UploadPanel 需要满足：
 
 * 统一上传交互
 * AI 易理解
@@ -43,7 +43,7 @@ UploadFile 需要满足：
 
 # 组件职责
 
-UploadFile 负责：
+UploadPanel 负责：
 
 * 上传 UI
 * 文件选择
@@ -55,7 +55,7 @@ UploadFile 负责：
 
 ---
 
-# UploadFile 不负责
+# UploadPanel 不负责
 
 禁止：
 
@@ -95,7 +95,7 @@ Form
 
 ↓
 
-UploadFile
+UploadPanel
 
 
 ↓
@@ -184,7 +184,7 @@ Parent API
 ## 图片上传
 
 ```text id="8v3k2m"
-UploadFile
+UploadPanel
 
 ↓
 
@@ -200,7 +200,7 @@ accept=image/*
 ## 附件上传
 
 ```text id="q6y1z8"
-UploadFile
+UploadPanel
 
 ↓
 
@@ -340,13 +340,13 @@ Excel
 
 # Template Goal
 
-UploadFile Template 的目标：
+UploadPanel Template 的目标：
 
 建立企业后台统一文件上传能力。
 
 通过：
 
-UploadFile
+UploadPanel
 
 *
 
@@ -383,7 +383,7 @@ CRUD Page
 
 ├── EditDialog
 
-└── UploadFile
+└── UploadPanel
 ```
 
 完整 AI 页面生成链路。

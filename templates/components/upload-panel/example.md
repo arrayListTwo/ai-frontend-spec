@@ -1,13 +1,13 @@
-# AFES UploadFile Example
+# AFES UploadPanel Example
 
 ## 简介
 
-本文档用于展示 UploadFile 如何从通用文件上传模板转换为具体业务上传组件。
+本文档用于展示 UploadPanel 如何从通用文件上传模板转换为具体业务上传组件。
 
 AI 生成上传组件时，应遵循：
 
 ```text id="g7n3v8"
-UploadFile Template
+UploadPanel Template
 
 ↓
 
@@ -69,7 +69,7 @@ const uploadConfig = {
 # Template Usage
 
 ```vue id="h3k7m9"
-<UploadFile
+<UploadPanel
 
   v-model="formData.avatar"
 
@@ -126,7 +126,7 @@ const config = {
 # Usage
 
 ```vue id="k8n2v5"
-<UploadFile
+<UploadPanel
 
   v-model="product.images"
 
@@ -187,7 +187,7 @@ const config = {
 # Usage
 
 ```vue id="x7p3n9"
-<UploadFile
+<UploadPanel
 
   v-model="formData.attachments"
 
@@ -229,7 +229,7 @@ EditDialog
 
 ↓
 
-UploadFile
+UploadPanel
 
 
 ↓
@@ -246,7 +246,7 @@ Submit
 <EditDialog>
 
 
-  <UploadFile
+  <UploadPanel
 
     v-model="form.attachments"
 
@@ -286,7 +286,7 @@ EmployeeForm
 ├── Organization
 
 
-└── UploadFile
+└── UploadPanel
 
 
       ├── ID Card
@@ -302,7 +302,7 @@ EmployeeForm
 # Multiple Upload Instances
 
 ```vue id="c8n5x2"
-<UploadFile
+<UploadPanel
 
   v-model="form.idCard"
 
@@ -315,7 +315,7 @@ EmployeeForm
 
 
 
-<UploadFile
+<UploadPanel
 
   v-model="form.contract"
 
@@ -357,7 +357,7 @@ ContractUpload
 
 ↓
 
-UploadFile
+UploadPanel
 
 
 配置：
@@ -426,7 +426,7 @@ axios.post('/upload')
 
 原因：
 
-UploadFile 不管理后端服务。
+UploadPanel 不管理后端服务。
 
 ---
 
@@ -510,7 +510,7 @@ accept='.pdf'
 
 通过 Example 文档，AI 可以理解：
 
-通用 UploadFile
+通用 UploadPanel
 
 ↓
 

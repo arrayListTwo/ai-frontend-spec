@@ -1,20 +1,20 @@
-# AFES UploadFile Replace Guide
+# AFES UploadPanel Replace Guide
 
 ## 简介
 
-本文档用于指导 AI 或开发人员基于 UploadFile 模板快速生成具体业务文件上传组件。
+本文档用于指导 AI 或开发人员基于 UploadPanel 模板快速生成具体业务文件上传组件。
 
 核心原则：
 
 > 保持上传组件结构稳定，只替换业务上传规则。
 
-UploadFile 是通用文件能力组件，不应该因为业务变化重新设计。
+UploadPanel 是通用文件能力组件，不应该因为业务变化重新设计。
 
 ---
 
 # 替换范围
 
-AI 生成业务 UploadFile 时，只允许修改：
+AI 生成业务 UploadPanel 时，只允许修改：
 
 ```text id="f9k2x7"
 accept
@@ -71,7 +71,7 @@ imageMode
 原模板：
 
 ```text id="m4p8q1"
-UploadFile
+UploadPanel
 ```
 
 根据业务生成：
@@ -371,7 +371,7 @@ ProductImageUpload
 
 ↓
 
-UploadFile
+UploadPanel
 
 
 配置：
@@ -455,7 +455,7 @@ ElMessage.success()
 生成完成检查：
 
 ```text id="s8m4q2"
-□ 保留 UploadFile
+□ 保留 UploadPanel
 
 □ v-model 正确
 
@@ -488,7 +488,7 @@ ElMessage.success()
 
 # Goal
 
-UploadFile Replace Guide 的目标：
+UploadPanel Replace Guide 的目标：
 
 让 AI 可以稳定生成：
 

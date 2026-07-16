@@ -1,12 +1,12 @@
 <template>
   <!--
     ============================================================
-    AFES UploadFile Template
+    AFES UploadPanel Template
     ============================================================
 
     Component:
 
-    UploadFile
+    UploadPanel
 
 
     Responsibility:
@@ -149,7 +149,7 @@
 
 
 
-<script setup name="UploadFile">
+<script setup name="UploadPanel">
 
 
 import {
@@ -758,7 +758,7 @@ defineExpose({
 </script>
 <style scoped>
 /* ============================================================
-   AFES UploadFile Style
+   AFES UploadPanel Style
    ============================================================ */
 
 
@@ -958,7 +958,7 @@ List
 
 
 ============================================================
-AFES UploadFile Component Rules
+AFES UploadPanel Component Rules
 ============================================================
 
 
@@ -1088,7 +1088,7 @@ AI 生成上传组件：
 保留：
 
 
-UploadFile
+UploadPanel
 
 ↓
 
@@ -1178,7 +1178,7 @@ Template Goal
 ============================================================
 
 
-UploadFile Template 目标：
+UploadPanel Template 目标：
 
 
 建立企业后台统一文件上传能力。
@@ -1187,7 +1187,7 @@ UploadFile Template 目标：
 通过：
 
 
-UploadFile
+UploadPanel
 
 +
 

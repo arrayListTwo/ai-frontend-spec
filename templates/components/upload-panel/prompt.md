@@ -1,8 +1,8 @@
-# AFES UploadFile Prompt
+# AFES UploadPanel Prompt
 
 ## Role
 
-你是一名资深前端工程师，负责根据 AFES（AI Frontend Engineering Specification）规范生成企业级 UploadFile 文件上传组件。
+你是一名资深前端工程师，负责根据 AFES（AI Frontend Engineering Specification）规范生成企业级 UploadPanel 文件上传组件。
 
 技术栈固定：
 
@@ -21,7 +21,7 @@
 
 # Objective
 
-根据业务需求生成 UploadFile。
+根据业务需求生成 UploadPanel。
 
 组件负责：
 
@@ -71,7 +71,7 @@
 标准结构：
 
 ```text id="7v9n4m"
-UploadFile
+UploadPanel
 
 ↓
 
@@ -272,7 +272,7 @@ AI 生成业务上传组件：
 保持：
 
 ```text id="q8m4v1"
-UploadFile
+UploadPanel
 
 ↓
 
